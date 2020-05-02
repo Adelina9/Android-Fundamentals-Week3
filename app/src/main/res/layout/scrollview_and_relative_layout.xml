@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/viewTopOrange"
+            android:layout_width="@dimen/view_side"
+            android:layout_height="@dimen/view_side"
+            android:layout_alignParentStart="true"
+            android:background="@android:color/holo_orange_light" />
+
+        <View
+            android:id="@+id/viewTopGreenLight"
+            android:layout_width="@dimen/view_side"
+            android:layout_height="@dimen/view_side"
+            android:layout_marginStart="@dimen/margin_lightgreen_from_orange"
+            android:layout_toEndOf="@id/viewTopOrange"
+            android:background="@color/green_light" />
+
+        <View
+            android:id="@+id/viewTopGreenDark"
+            android:layout_width="@dimen/view_side"
+            android:layout_height="@dimen/view_side"
+            android:layout_toEndOf="@id/viewTopGreenLight"
+            android:background="@color/green_dark" />
+
+        <View
+            android:id="@+id/viewTopRed"
+            android:layout_width="@dimen/view_side"
+            android:layout_height="@dimen/view_side"
+            android:layout_marginStart="@dimen/margin_red_from_darkgreen"
+            android:layout_toEndOf="@id/viewTopGreenDark"
+            android:background="@color/red" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/viewTopOrange"
+            android:text="@string/linear_layout_description" />
+    </RelativeLayout>
+</ScrollView>
