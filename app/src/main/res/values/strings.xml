@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">Assignment2</string>
     <string name="login">LOGIN</string>
-    <string name="email">Email</string>
-    <string name="phone">Phone</string>
+    <string name="email_hint">Email</string>
+    <string name="phone_hint">Phone</string>
     <string name="terms_and_conditions">I accept T&amp;C</string>
     <string name="submit">SUBMIT</string>
     <string name="empty_phone_number_message">Fill the input with a valid phone number</string>
@@ -24,4 +24,7 @@
     <string name="eclair">Eclair</string>
     <string name="kitkat">KitKat</string>
     <string name="pie">Pie</string>
+    <string name="email">Email: </string>
+    <string name="phone">Phone: </string>
+    <string name="accepted_terms_and_conds">Accepted terms and conditions: </string>
 </resources>

@@ -420,11 +420,13 @@
     <string name="abc_shareactionprovider_share_with_application">Share with <ns1:g example="Mail" id="application_name">%s</ns1:g></string>
     <string name="abc_toolbar_collapse_description">Collapse</string>
     <string name="accept_terms_and_conds_message">Please accept the terms and conditions</string>
+    <string name="accepted_terms_and_conds">Accepted terms and conditions: </string>
     <string name="app_name">Assignment2</string>
     <string name="cupcake">Cupcake</string>
     <string name="donut">Donut</string>
     <string name="eclair">Eclair</string>
-    <string name="email">Email</string>
+    <string name="email">Email: </string>
+    <string name="email_hint">Email</string>
     <string name="empty_email_address_message">Fill the input with a valid email address</string>
     <string name="empty_phone_number_message">Fill the input with a valid phone number</string>
     <string name="kitkat">KitKat</string>
@@ -439,7 +441,8 @@
         A view group that allows the view hierarchy placed within it to be scrolled. Scroll view may have only one direct child placed within it. To add multiple views within the scroll view, make the direct child you add a view group, for example LinearLayout, and place additional views within that LinearLayout.
     </string>
     <string name="login">LOGIN</string>
-    <string name="phone">Phone</string>
+    <string name="phone">Phone: </string>
+    <string name="phone_hint">Phone</string>
     <string name="pie">Pie</string>
     <string name="search_menu_title">Search</string>
     <string name="spinner_example">Spinner Example</string>

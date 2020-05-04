@@ -7,12 +7,14 @@ import android.util.Patterns;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     private EditText emailAddressEditText;
     private EditText phoneEditText;
     private CheckBox termsCheckBox;
+    private TextView resultTextView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
         emailAddressEditText = findViewById(R.id.emailAddressEditText);
         phoneEditText = findViewById(R.id.phoneEditText);
         termsCheckBox = findViewById(R.id.termsCheckBox);
+        resultTextView = findViewById(R.id.emailAndPhoneTextView);
     }
 
     public void loginOnClick(View view) {
@@ -35,8 +38,12 @@ public class MainActivity extends AppCompatActivity {
         if (!termsCheckBox.isChecked()) {
             Toast.makeText(this, R.string.accept_terms_and_conds_message, Toast.LENGTH_LONG).show();
         }
-        if (!email.isEmpty() && !phone.isEmpty() && termsCheckBox.isChecked()) {
-            Toast.makeText(this, email + " " + phone + " " + termsCheckBox.isChecked(), Toast.LENGTH_LONG).show();
+        if (!email.isEmpty() && !phone.isEmpty()) {
+            String resultString =
+                            getString(R.string.email) + " " + email + "\n" +
+                            getString(R.string.phone) + " " + phone + "\n" +
+                            getString(R.string.accepted_terms_and_conds) + " " + termsCheckBox.isChecked();
+            resultTextView.setText(resultString);
         }
     }
 }

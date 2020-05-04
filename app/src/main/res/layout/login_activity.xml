@@ -19,14 +19,14 @@
         android:id="@+id/emailAddressEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/email"
+        android:hint="@string/email_hint"
         android:inputType="textEmailAddress" />
 
     <EditText
         android:id="@+id/phoneEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/phone"
+        android:hint="@string/phone_hint"
         android:inputType="phone" />
 
     <CheckBox
@@ -40,4 +40,8 @@
         android:layout_height="wrap_content"
         android:onClick="loginOnClick"
         android:text="@string/submit" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/emailAndPhoneTextView"/>
 </LinearLayout>
